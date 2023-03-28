@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroFuncionario"
+    android:orientation="vertical"
+    android:id="@+id/telaCadastroFun"
+    tools:openDrawer="start">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/funNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Nome"
+                android:inputType="textPersonName"
+
+                />
+
+
+            <EditText
+                android:id="@+id/funCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/funNome"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Cpf"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/funEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/funCpf"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/funTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:layout_below="@+id/funEmail"
+                android:hint=" Telefone"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/funCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/funTelefone"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Celular"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/funEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/funCelular"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Endereço"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/funBairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/funEndereco"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Bairro"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/funCep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/funBairro"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Cep"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/funNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Numero do Endereço"
+                android:inputType="number"
+                android:layout_below="@id/funCep"
+                />
+
+            <EditText
+                android:id="@+id/funComplemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Complemento"
+                android:inputType="text"
+                android:layout_below="@id/funNumero"
+                />
+
+            <EditText
+                android:id="@+id/funSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Senha"
+                android:inputType="textPassword"
+                android:layout_below="@id/funComplemento"
+                />
+            <EditText
+                android:id="@+id/funFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Caminho da foto"
+                android:inputType="text"
+                android:layout_below="@id/funSenha"
+                />
+            <Button
+                android:id="@+id/btncadFunCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint=" Cadastrar Funcionario"
+                android:inputType="textPersonName"
+                android:layout_below="@id/funFoto"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+       <include layout="@layout/toolbar"/>
+       <android.support.design.widget.NavigationView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/nav_view"
+           app:headerLayout="@layout/cabecalho"
+           app:menu="@menu/lateral"
+           android:layout_gravity="start"
+
+           />
+
+</android.support.v4.widget.DrawerLayout>
